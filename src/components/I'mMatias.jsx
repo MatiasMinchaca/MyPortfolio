@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react';
 import {
     FirstSection,
     Blob,
@@ -7,14 +7,8 @@ import {
 import {
     NavLink
 } from "react-router-dom";
-import 'aos/dist/aos.css';
-
 
 const ImMatias = () => {
-    let windowWidth = document.documentElement.scrollWidth;
-    useEffect(() => {
-        console.log(windowWidth)
-    }, [windowWidth])
     return (
         <FirstSection>
              <Blob viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
