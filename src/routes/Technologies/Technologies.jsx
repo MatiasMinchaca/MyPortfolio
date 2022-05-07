@@ -13,7 +13,7 @@ const Technologies = () => {
     return (
         <TechnologiesSection >
                 <TittleTec>
-                    Tecnologías vitas por mi
+                    Tecnologías
                 </TittleTec>
                 {
                     TechnologiesDB.map(element => 
