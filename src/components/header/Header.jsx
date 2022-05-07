@@ -1,14 +1,13 @@
 import React, {useState} from 'react';
-import { Container, LineS, 
-    LogoContainer, 
+import { 
+    Container, 
+    LineS, 
+    DownloadCV, 
     MenuBurguer, 
     MenuClose, 
-    MenuD, 
+    MenuD,
+    Block,
     Options } from './Header elements';
-import {
-    FaBars,
-    FaTimes
-} from 'react-icons/fa';
 import {
     NavLink,
     Link
@@ -18,11 +17,12 @@ const Header = () => {
     const [toDeployMenu, setToDeployMenu] = useState(false);
     return (
         <>
+        {/* <AbstractGoldRed src="/images/AbstractGoldRed.jpg" alt="back" /> */}
         <Container>
-            <MenuBurguer onClick={() => setToDeployMenu(!toDeployMenu)}>
-                {
-                    toDeployMenu ? <FaTimes /> : <FaBars />
-                }
+            <MenuBurguer className={toDeployMenu ? 'press' : ''} onClick={() => setToDeployMenu(!toDeployMenu)}>
+                <span className='line'></span>
+                <span className='line'></span>
+                <span className='line'></span>
             </MenuBurguer>
             <MenuD deploy={toDeployMenu}>
                 <Options>
@@ -32,33 +32,31 @@ const Header = () => {
                 </Options>
                 <Options>
                     <NavLink to='/aboutMe'>
-                        About Me
+                        Sobre mí
                     </NavLink>
                 </Options>
                 <Options>
-                    <NavLink to='/cv' >
-                        Curriculum
-                    </NavLink>
-                </Options>
-                <Options>
-                    <NavLink to='/proyects'>
-                        Proyects
+                    <NavLink to='/technologies' >
+                        Tecnologias
                     </NavLink>
                 </Options>
                 <Options>
                     <NavLink to='/contact'>
-                        Contact
+                        Contacto
                     </NavLink>
                 </Options>
             </MenuD>
             <MenuClose deploy={toDeployMenu} onClick={() => setToDeployMenu(!toDeployMenu)}>
             </MenuClose>
-            <LogoContainer className='logo'>
-                Matias Minchaca
-            </LogoContainer>
+            <DownloadCV>
+                <a href="/cv/Matias Minchaca CV.pdf" download="Curriculum Matias Minchaca">
+                    Descargar CV
+                </a>
+            </DownloadCV>
             <LineS>
             </LineS>
         </Container>
+        <Block></Block>
         </>
     );
 };
