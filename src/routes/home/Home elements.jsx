@@ -317,7 +317,7 @@ export const CardProyects = styled.article`
         margin-top: 5px;
     }
     p {
-        text-align: center;
+        text-align: justify;
         margin-top: 10px;
     }
     a {

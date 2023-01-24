@@ -10,6 +10,7 @@ export const ContainerAbout = styled.div`
     font-weight: bold;
     margin: 20px 0;
     position: relative;
+    overflow: hidden;
     .myPhoto{
         width: 230px;
         height: 230px;
@@ -29,28 +30,24 @@ export const ContainerTextAbout = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #8b0000d6;
     color: white;
-    padding: 15px;
-    text-shadow: 0 3px 6px #000000;
-    box-shadow: 0 0 6px #000000b5;
-    border: 5px solid #c99c0a;
+    position: relative;
+    text-shadow: 0 3px 6px #220101;
     letter-spacing: 1pt;
-    max-width: 370px;
-    transform: skew(-10deg);
+    overflow: hidden;
+    height: 323px;
+    width: 334px;
     h1{
         font-size: 18px;
         margin-bottom: 5px;
         user-select: none;
         z-index: 22;
-        transform: skew(10deg);
     }
     h2{
         font-size: 17px;
         margin-bottom: 5px;
         user-select: none;
         z-index: 22;
-        transform: skew(10deg);
     }
     p{
         font-size: 13px;
@@ -65,7 +62,7 @@ export const ContainerTextAbout = styled.div`
         text-align: center;
         width: 90%;
         user-select: none;
-        transform: skew(10deg);
+        z-index: 22;
     }
     .back{
         padding: 10px;
@@ -85,7 +82,6 @@ export const ContainerTextAbout = styled.div`
         margin-top: 20px;
         text-shadow: 0 0 4px black;
         letter-spacing: 1pt;
-        transform: skew(10deg);
         :focus-visible{
             text-decoration: none;
         }
@@ -127,10 +123,10 @@ export const ContainerTextAbout = styled.div`
             bottom: 80px;
         }
         h1 {
-            font-size: 30px;
+            font-size: 22px;
         }
         h2 {
-            font-size: 29px;
+            font-size: 21px;
         }
         p {
             font-size: 11px;
@@ -150,6 +146,7 @@ export const FirstSectionAbout = styled.div`
     align-items: center;
     gap: 10px;
     background: #eeeeeec7;
+    margin-top: 10px;
     h2{
         font-size: 2rem;
     }
@@ -207,6 +204,27 @@ export const SkillCard = styled.article`
         font-weight: 400;
         font-family: "Sansita Swashed", cursive;
     }
+    svg{
+        filter: drop-shadow(0 0 8px #70a6df);
+        animation: changeBorderSkill 4s linear 0.5s infinite normal;
+    }
+    @keyframes changeBorderSkill {
+        20% {
+            filter: drop-shadow(0 0 8px #70a6df);
+        }
+        40% {
+            filter: drop-shadow(0 0 8px #ffffff1a);
+        }
+        60% {
+            filter: drop-shadow(0 0 8px #70a6df);
+        }
+        80% {
+            filter: drop-shadow(0 0 8px #ffffff1a);
+        }
+        100% {
+            filter: drop-shadow(0 0 8px #70a6df);
+        }
+    }
 `;
 
 export const ThirdSectionAbout = styled.div`
@@ -218,7 +236,7 @@ export const ThirdSectionAbout = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content; center;
+    justify-content: center;
     gap: 10px;
     margin-top: 60px;
     color: black;
@@ -267,8 +285,20 @@ export const HistoryContainer = styled.div`
         font-size: 1.3rem;
     }
     p {
-        letter-spacing: 1pt;
+        letter-spacing: 0.5pt;
         font-size: 18px;
         text-shadow: 0 1px 6px #eeeeeea1;
+        text-align: justify;    
     }
+`;
+
+export const BlobAbout2 = styled.svg`
+    width: 400px;
+    height: 400px;
+    fill: #c99c0a;
+    filter: drop-shadow(0px 0px 2px black);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-48%) translateY(-50%);
 `;

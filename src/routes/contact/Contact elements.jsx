@@ -60,10 +60,10 @@ export const Card = styled.article`
             transform: scale(1.1);
         }
     }
-    :hover{
+   /*  :hover{
         img{
             transform: rotate3d(1, 1, 1, 360deg);
-            transition: transform 2s cubic-bezier(0,0,.5,2);, width 2s cubic-bezier(0, 0, .5, 2);
+            transition: transform 2s cubic-bezier(0,0,.5,2), width 2s cubic-bezier(0, 0, .5, 2);
         }
-    }
+    } */
 `;

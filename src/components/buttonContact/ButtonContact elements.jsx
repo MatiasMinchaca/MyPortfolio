@@ -14,11 +14,13 @@ export const OpenClose = styled.button`
     font-size: 28px;
     box-shadow: 0 0 2px rgb(0 0 0 / 60%);
     z-index: 300;
+    background: #c99c0a;
     :active{
         transform: scale(0.8);
     }
     svg{
-        fill: black;
+        fill: darkred;
+        filter: drop-shadow(0 0 6px white);
     }
     @media screen and (min-width: 768px){
         display: none;
@@ -43,12 +45,13 @@ export const LateralButtons = styled.button`
         box-shadow: 0 0 2px rgb(0 0 0 / 60%);
         z-index: 300;
         transition: all 0.6s ease-in-out;
+        background: #c99c0a;
         cursor: pointer;
         :active{
             transform: scale(0.8);
         }
         svg{
-            fill: black;
+            fill: darkred;
             transition: all 0.6s ease-in-out;
             ${({show}) => show ? 'transform: rotate(180deg)' : ''};
         }
