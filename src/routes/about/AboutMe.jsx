@@ -67,10 +67,8 @@ const AboutMe = () => {
                     Residencia: Bs As, Argentina
                     <br />
                     Nacionalidad: Argentino
-                    <br />
-                    Lenguaje mas usado: JavaScript
                 </h3>
-                <NavLink to='/' className={'back'} title='About Me' >
+                <NavLink to='/' className={'back'}>
                     Inicio
                 </NavLink>
             </ContainerTextAbout>

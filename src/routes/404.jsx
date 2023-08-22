@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react';
 import styled from 'styled-components';
-
 
 const Container = styled.div`
     width: 100%;
@@ -9,7 +7,7 @@ const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin: 5px
+    margin: 5px;
 `;
 
 const SectionOne = styled.div`
@@ -17,17 +15,9 @@ const SectionOne = styled.div`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-
 `;
 
-
 const NotFound = () => {
-
-
-    useEffect(() => {
-
-    })
-
     return (
         <>
             <Container>

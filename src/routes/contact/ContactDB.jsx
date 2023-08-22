@@ -2,7 +2,6 @@ import WhatsAppIcon from '../../components/icons/WhatsAppIcon';
 import LinkedInIcon from '../../components/icons/LinkedInIcon';
 import GitHubIcon from '../../components/icons/GitHubIcon';
 import GmailIcon from '../../components/icons/GmailIcon';
-import InstagramIcon from '../../components/icons/InstagramIcon';
 import FacebookIcon from '../../components/icons/FacebookIcon';
 
 export const Contacts = [
@@ -40,12 +39,5 @@ export const Contacts = [
         url: 'https://www.facebook.com/matias.minchaca',
         image: '/images/Facebook.jpg',
         icon: <FacebookIcon />
-    },
-    {
-        name: 'Instagram',
-        nickname: 'matias_minchaca',
-        url: 'https://www.instagram.com/matias_minchaca',
-        image: '/images/Instagram.jpg',
-        icon: <InstagramIcon />
-    },
+    }
 ]

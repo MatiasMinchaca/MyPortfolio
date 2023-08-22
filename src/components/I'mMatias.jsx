@@ -52,10 +52,8 @@ const ImMatias = () => {
                     Residencia: Bs As, Argentina
                     <br />
                     Nacionalidad: Argentino
-                    <br />
-                    Lenguaje mas usado: JavaScript
                 </h3>
-                <NavLink to='/aboutMe' className={({ isActive }) => ` more ${isActive ? 'selected' : ''}`} title='About Me' >
+                <NavLink to='/aboutMe' className={({ isActive }) => ` more ${isActive ? 'selected' : ''}`} >
                     Leer más.
                 </NavLink>
             </ContainerText>

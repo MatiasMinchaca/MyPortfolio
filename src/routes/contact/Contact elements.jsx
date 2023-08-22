@@ -35,15 +35,18 @@ export const Card = styled.article`
         transition: transform 2s cubic-bezier(0,0,.5,2);
     }
     svg{
-        position: absolute;
-        border-radius: 50%;
-        border: 3px solid #f2f2f2;
-        width: 30px;
-        height: 30px;
-        top: -110px;
         fill: #ffffff;
-        filter: drop-shadow(0 4px 6px black);
-        z-index: 9;    
+        -webkit-filter: drop-shadow(0 4px 6px black);
+        filter: drop-shadow(0 0px 6px #00000042);
+        z-index: 9;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        border: 5px solid #f2f2f2;
+        top: -68px;
+        background: #cea72f; 
+        padding: 10px;
     }
     h2{
         color: white;

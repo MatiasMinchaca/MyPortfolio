@@ -11,7 +11,6 @@ const Contact = () => {
                 Contacts.map((contact) => (
                     <Card key={contact.name}>
                         {contact.icon}
-                        <img src={contact.image} alt={contact.name} />
                         <h2>
                             {contact.name}
                         </h2>
