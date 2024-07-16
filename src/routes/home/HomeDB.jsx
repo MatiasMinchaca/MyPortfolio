@@ -9,8 +9,8 @@ import SequelizeIcon from '../../components/icons/SequelizeIcon';
 import JWTIcon from '../../components/icons/JWTIcon';
 import ApolloIcon from '../../components/icons/ApolloIcon';
 import GraphQlIcon from '../../components/icons/GraphQLIcon';
-import NextJsIcon from '../../components/icons/NextJsIcon';
-import FirebaseIcon from '../../components/icons/FirebaseIcon';
+/* import NextJsIcon from '../../components/icons/NextJsIcon';
+import FirebaseIcon from '../../components/icons/FirebaseIcon'; */
 
 export const TechnologiesDB = [
     {
