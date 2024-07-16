@@ -39,13 +39,11 @@ export const ContainerTextAbout = styled.div`
     width: 334px;
     h1{
         font-size: 18px;
-        margin-bottom: 5px;
         user-select: none;
         z-index: 22;
     }
     h2{
         font-size: 17px;
-        margin-bottom: 5px;
         user-select: none;
         z-index: 22;
     }
@@ -58,7 +56,6 @@ export const ContainerTextAbout = styled.div`
         text-align: center;
     }
     h3{
-        margin-top: 5px;
         text-align: center;
         width: 90%;
         user-select: none;

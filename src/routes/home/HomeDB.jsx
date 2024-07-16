@@ -256,7 +256,7 @@ export const ProyectsDB = [
             },
         ]
     },
-    {
+    /* {
         title: 'LetterApp',
         subtitle: 'App restaurant menu',
         description: 'Una app web sencilla para crear cartas/menus para tu restaurant. Utilizando las tecnologías de NextJs, ReactJs y Firebase cree una amigable app web con la que te puedes registrar, loguear y crear cartas para tu restaurant, una vez creado, se te proporcionara un codigo QR el cual puedes descargar para acceder a cada carta/menu creada.',
@@ -301,5 +301,5 @@ export const ProyectsDB = [
                 icon: <FirebaseIcon width={'1em'} height={'1em'} fill={'darkred'} />
             },
         ]
-    },
+    }, */
 ]

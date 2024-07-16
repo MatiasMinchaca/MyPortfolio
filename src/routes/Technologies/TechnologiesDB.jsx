@@ -22,7 +22,7 @@ import AngularJsIcon from "../../components/icons/AngularJsIcon";
 import DockerIcon from "../../components/icons/DockerIcon"
 import PHPIcon from "../../components/icons/PHPIcon"
 import WordpressIcon from "../../components/icons/WordpressIcon";
-
+import LaravelIcon from "../../components/icons/LaravelIcon";
 
 export const TechnologiesDB = [
     {
@@ -48,6 +48,12 @@ export const TechnologiesDB = [
         docs: "Lo que distingue a PHP de algo del lado del cliente como Javascript es que el código es ejecutado en el servidor, generando HTML y enviándolo al cliente. El cliente recibirá el resultado de ejecutar el script, aunque no se sabrá el código subyacente que era. El servidor web puede ser configurado incluso para que procese todos los ficheros HTML con PHP, por lo que no hay manera de que los usuarios puedan saber qué se tiene debajo de la manga.",
         link: 'https://www.php.net/manual/es/intro-whatis.php',
         icon: <PHPIcon width={'3em'} height={'3em'} fill={'darkred'} />
+    },
+    {
+        name: 'Laravel',
+        docs: "Laravel es un framework PHP gratis y de código abierto que brinda un conjunto de herramientas y recursos para crear aplicaciones modernas. Posee un ecosistema integral que combina funciones integradas y una variedad de paquetes y extensiones compatibles. ",
+        link: 'https://laravel.com/docs/11.x#meet-laravel',
+        icon: <LaravelIcon width={'3em'} height={'3em'} fill={'darkred'} />
     },
     {
         name: 'TypeScript',
@@ -176,3 +182,4 @@ export const TechnologiesDB = [
         icon: <TrelloIcon width="3em" height="3em" fill='darkred' />
     },
 ]
+

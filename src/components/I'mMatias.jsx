@@ -47,11 +47,9 @@ const ImMatias = () => {
                     Web Developer
                 </h2>
                 <h3>
-                    Edad: 20 años
+                    22 años
                     <br />
-                    Residencia: Bs As, Argentina
-                    <br />
-                    Nacionalidad: Argentino
+                    Buenos Aires, Argentina
                 </h3>
                 <NavLink to='/aboutMe' className={({ isActive }) => ` more ${isActive ? 'selected' : ''}`} >
                     Leer más.
