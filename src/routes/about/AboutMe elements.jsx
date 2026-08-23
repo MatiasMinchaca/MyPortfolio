@@ -35,8 +35,8 @@ export const ContainerTextAbout = styled.div`
     text-shadow: 0 3px 6px #220101;
     letter-spacing: 1pt;
     overflow: hidden;
-    height: 323px;
-    width: 334px;
+    height: 375px;
+    width: 400px;
     h1{
         font-size: 18px;
         user-select: none;
@@ -44,6 +44,9 @@ export const ContainerTextAbout = styled.div`
     }
     h2{
         font-size: 17px;
+        width: 90%;
+        text-align: center;
+        line-height: 1.2;
         user-select: none;
         z-index: 22;
     }
@@ -52,22 +55,31 @@ export const ContainerTextAbout = styled.div`
         user-select: none;
         z-index: 22;
         display: flex;
-        margin-bottom: 10px;
+        margin: 6px 0 8px;
         text-align: center;
+        width: 78%;
+        line-height: 1.25;
     }
     h3{
+        font-size: 20px;
+        line-height: 1.15;
         text-align: center;
         width: 90%;
         user-select: none;
         z-index: 22;
     }
+    .heroActions{
+        display: flex;
+        gap: 8px;
+        z-index: 68;
+        margin-top: 10px;
+    }
     .back{
         padding: 10px;
         border-radius: 15px;
-        bottom: 35px;
         z-index: 68;
         background: #c99c0a;
-        font-size: 15px;
+        font-size: 12px;
         text-decoration: none;
         color: white;
         display: flex;
@@ -76,9 +88,12 @@ export const ContainerTextAbout = styled.div`
         align-items: center;
         border: 1px solid white;
         transition: all 0.8s;
-        margin-top: 20px;
         text-shadow: 0 0 4px black;
         letter-spacing: 1pt;
+        white-space: nowrap;
+        &.secondary{
+            background: #8b0000;
+        }
         :focus-visible{
             text-decoration: none;
         }
@@ -105,9 +120,6 @@ export const ContainerTextAbout = styled.div`
         }
     }
     @media screen and (min-width: 360px) {
-        .more {
-            bottom: 70px;
-        }
         h1 {
             font-size: 21px;
         }
@@ -116,17 +128,17 @@ export const ContainerTextAbout = styled.div`
         }
     }
     @media screen and (min-width: 768px) {
-        .more {
-            bottom: 80px;
+        .back {
+            cursor: pointer;
         }
         h1 {
             font-size: 22px;
         }
         h2 {
-            font-size: 21px;
+            font-size: 20px;
         }
         p {
-            font-size: 11px;
+            font-size: 12px;
         }
     }
 `;
@@ -290,8 +302,8 @@ export const HistoryContainer = styled.div`
 `;
 
 export const BlobAbout2 = styled.svg`
-    width: 400px;
-    height: 400px;
+    width: 470px;
+    height: 470px;
     fill: #c99c0a;
     filter: drop-shadow(0px 0px 2px black);
     position: absolute;

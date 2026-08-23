@@ -5,11 +5,13 @@ import {
     Blob2,
     ContainerText
 } from "./I'mMatias elements";
-import {
-    NavLink
-} from "react-router-dom";
+import getAge from '../utils/getAge';
+
+const birthDate = new Date(2001, 8, 12);
 
 const ImMatias = () => {
+    const age = getAge(birthDate);
+
     return (
         <FirstSection>
             <Blob viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
@@ -44,16 +46,24 @@ const ImMatias = () => {
                     Matías Minchaca
                 </h1>
                 <h2>
-                    Web Developer
+                    Full-Stack Technical Developer
                 </h2>
+                <p>
+                    WordPress, WooCommerce, APIs, automatizacion y backend.
+                </p>
                 <h3>
-                    22 años
+                    {age} años
                     <br />
-                    Buenos Aires, Argentina
+                    Argentino · Sevilla, España
                 </h3>
-                <NavLink to='/aboutMe' className={({ isActive }) => ` more ${isActive ? 'selected' : ''}`} >
-                    Leer más.
-                </NavLink>
+                <div className="heroActions">
+                    <a href="#experience" className="more">
+                        Ver experiencia
+                    </a>
+                    <a href="#contact" className="more secondary">
+                        Contactarme
+                    </a>
+                </div>
             </ContainerText>
         </FirstSection>
     );

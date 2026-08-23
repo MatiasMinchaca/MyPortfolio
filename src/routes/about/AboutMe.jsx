@@ -22,8 +22,12 @@ import DoubleCheckIcon from '../../components/icons/DoubleCheckIcon';
 import HandIcon from '../../components/icons/HandIcon';
 import Triangle from '../../components/icons/Triangle';
 import { NavLink } from 'react-router-dom';
+import getAge from '../../utils/getAge';
+
+const birthDate = new Date(2001, 8, 12);
 
 const AboutMe = () => {
+    const age = getAge(birthDate);
 
     return (
         <ContainerAbout>
@@ -59,36 +63,44 @@ const AboutMe = () => {
                     Matías Minchaca
                 </h1>
                 <h2>
-                    Web Developer
+                    Full-Stack Technical Developer
                 </h2>
+                <p>
+                    WordPress, WooCommerce, APIs, automatizacion y backend.
+                </p>
                 <h3>
-                    22 años
+                    {age} años
                     <br />
-                    Buenos Aires, Argentina
+                    Argentino · Sevilla, España
                 </h3>
-                <NavLink to='/' className={'back'}>
-                    Inicio
-                </NavLink>
+                <div className="heroActions">
+                    <NavLink to='/' className={'back'}>
+                        Inicio
+                    </NavLink>
+                    <a href='/#contact' className="back secondary">
+                        Contacto
+                    </a>
+                </div>
             </ContainerTextAbout>
             <FirstSectionAbout>
                 <PhotoOne src='/images/photoThree.png' />
                 <h2>
-                    Sobre Mí...
+                    Sobre Mí
                 </h2>
                 <p>
-                    Desde que inicié en el mundo de la programación, algo en mí cambió. No solo mi manera de pensar, que día a día, gracias a la lógica de crear funciones en JavaScript, me hace razonar en mi vida cotidiana, sino también mi forma de ver todo. Gracias a HTML y CSS, combino elementos para que queden bonitos y simétricos, bloque tras bloque, etiqueta tras etiqueta, div tras div.
+                    Soy Full-Stack Technical Developer con foco en WordPress, WooCommerce, integraciones, automatizacion y soporte tecnico avanzado. Me especializo en resolver problemas que mezclan codigo, CMS, APIs, servidores, hosting, DNS y herramientas de negocio.
                 </p>
                 <p>
-                    Comencé a estudiar programación después de terminar la escuela secundaria, que no estaba para nada relacionada con el mundo IT. Con la ayuda de Fundación Formar, Digital House y el Banco Santander, gané una beca para estudiar programación Full Stack. Armamos un proyecto de E-Commerce en equipo, con clases virtuales de los profesores y la plataforma de DH para seguir el ritmo.
+                    Desde octubre de 2024 trabajo en Bululu Agency participando en proyectos para clientes como Polestar Pilates, T-ROC Global e ISECO. Mi trabajo incluye desarrollo y mantenimiento WordPress/WooCommerce, integraciones con APIs, automatizaciones con n8n, soporte de sitios en produccion, migraciones, seguridad y configuracion de entornos.
                 </p>
                 <p>
-                    Pero yo no me quedé con eso. Por mi cuenta, estudiaba todo el día, aprendiendo más de lo que nos dictaba el profesor. Utilizaba mi habilidad de "Googlear", que quizás no suene tan profesional, pero hoy todo está ahí. Aprender a usar la gran herramienta de búsqueda es indispensable porque las tecnologías, las librerías, los frameworks se actualizan constantemente. Para ver qué está pasando, se necesita Google. Una palabra, miles de resultados; por eso hay que saber usarla.
+                    Mi diferencial es tomar una incidencia ambigua y seguir el rastro hasta encontrar la causa: puede estar en un plugin, una API, una base de datos, permisos Linux, PHP-FPM, .htaccess, SSL, DNS o una automatizacion mal conectada.
                 </p>
                 <p>
-                    Noches sin dormir buscando cómo funciona cada función, cómo implementarla. Las ideas surgían y lo que yo hacía era ver cómo aprender más, llenarme de conocimiento. ¿Sabes por qué? Porque es algo que me apasiona, algo que me encanta y no me da vergüenza decirlo. Si por mí fuera, lo gritaría. Programar no solo es sentarte en la computadora y escribir, es pensar, razonar, ver, divertirte, crear. Son las mejores sensaciones que he podido tener y si no lo entiendes, te invito a que te sumes, aunque sea a echarle un ojo...
+                    Tambien estoy desarrollando proyectos propios con Python, FastAPI, SQLite y Raspberry Pi, explorando monitoreo, self-hosting, procesos persistentes y arquitectura backend ligera.
                 </p>
                 <p>
-                    ¡No te arrepentirás!
+                    Me interesa construir soluciones que funcionen en produccion, sean mantenibles y conecten bien las necesidades del negocio con la implementacion tecnica.
                 </p>
 
             </FirstSectionAbout>
@@ -156,24 +168,20 @@ const AboutMe = () => {
                     <Triangle left='120%' />
                 </TrianglesContainer>
                 <HistoryTitle>
-                    Una breve historia
+                    Perfil técnico actual
                 </HistoryTitle>
                 <HistoryContainer>
                     <h3>
-                        Te contaré la historia de un chico que está pasando por su mejor momento...
+                        Desarrollo, integraciones, automatizacion e infraestructura tecnica.
                     </h3>
                     <p>
-                        Nació al norte de Argentina, en una provincia llamada Salta. Desde pequeño, la tecnología siempre fue algo que le llamó mucho la atención. Para él, era fascinante ver cómo en un dispositivo se podían capturar momentos de la vida. Era un niño con pocos recursos económicos, pero le gustaba desarmar aparatos electrónicos viejos solo por diversión.
+                        Actualmente mi perfil combina desarrollo web, soporte tecnico e integraciones. Trabajo principalmente con WordPress, WooCommerce, PHP, JavaScript, APIs REST, automatizaciones con n8n y herramientas de marketing/CRM.
                         <br />
-                        Siempre encontraba la forma de entretenerse: crear juguetes a base de artículos reciclados, dibujar, pintar, etc. La escuela nunca fue un problema; sacaba buenas notas. Sus padres pensaban que no hacía nada, ya que al llegar a casa se ponía a hacer otras cosas en vez de tarea, lo que no sabían era que él ya tenía todo hecho.
+                        Tambien tengo experiencia practica en hosting, migraciones, DNS, SSL, Linux, permisos, .htaccess, PHP-FPM, seguridad WordPress y resolucion de problemas en entornos productivos.
                         <br />
-                        Al crecer, se daba cuenta de que no solo él crecía, sino que la tecnología lo acompañaba. A la edad de 12 años, tuvo su primer celular, y fue el boom que necesitaba. Tener tanto conocimiento en la palma de su mano abrió su mente y desde ahí comenzó algo nuevo para él. Aprendía todo lo que veía en internet: tutoriales, PDF, foros, etc. Nada lo detuvo.
+                        En paralelo, estoy fortaleciendo backend con Python, FastAPI, SQLite, testing y despliegues simples en Raspberry Pi, usando Git/GitHub y SSH como parte de mi flujo de trabajo.
                         <br />
-                        Matías aprendió mucho y lo sigue haciendo. Sus amigos y familiares acudían a él en busca de soluciones para problemas con sus celulares, laptops o PCs. Si no lograba arreglarlo, dejaba todo para hallar el error. Lo que más le gusta es buscar hasta solucionar cualquier error u obstáculo que se ponga en su camino. No importa cuánto tiempo le tome; al final, usa la frase "todo tiene arreglo".
-                        <br />
-                        Durante la secundaria, mientras estudiaba en una escuela técnica, descubrió el mundo de la programación, que fue otro boom para él. Aunque no pudo dedicarle el tiempo que quería, ya que no poseía los recursos ni tiempo necesarios, al terminar la secundaria vio una oportunidad para irse a vivir a Buenos Aires. No lo dudó. Una vez allí, tuvo que decidir si entrar a la universidad o empezar a estudiar por su cuenta lo que es programación.
-                        <br />
-                        Pensó bastante en qué decisión tomar, pero llegó a la conclusión de estudiar por su cuenta o en algún curso corto. Lo que quería era adentrarse plenamente en el mundo IT, y qué mejor manera de hacerlo que dedicarse todo el tiempo a programar. Así es como llegamos aquí: después de estudiar más de un año con cursos y de manera autodidacta, leyendo documentación y viendo videos, ha hecho crecer su conocimiento. Ni se imaginan lo feliz que lo hace cuando escucha o habla de código.
+                        Busco seguir creciendo como desarrollador tecnico capaz de diagnosticar, implementar y mantener soluciones completas, desde la funcionalidad visible hasta la infraestructura que la sostiene.
                     </p>
                 </HistoryContainer>
             </ThirdSectionAbout>
