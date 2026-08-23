@@ -14,7 +14,7 @@ const Contact = () => {
                         <h2>
                             {contact.name}
                         </h2>
-                        <a href={contact.url}>
+                        <a href={contact.url} target="_blank" rel="noopener noreferrer">
                             {contact.nickname}
                         </a>
                     </Card>

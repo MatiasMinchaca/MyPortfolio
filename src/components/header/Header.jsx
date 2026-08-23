@@ -36,14 +36,14 @@ const Header = () => {
                     </NavLink>
                 </Options>
                 <Options>
-                    <NavLink to='/technologies' >
-                        Tecnologias
-                    </NavLink>
+                    <a href='/#experience'>
+                        Experiencia
+                    </a>
                 </Options>
                 <Options>
-                    <NavLink to='/contact'>
+                    <a href='/#contact'>
                         Contacto
-                    </NavLink>
+                    </a>
                 </Options>
             </MenuD>
             <MenuClose deploy={toDeployMenu} onClick={() => setToDeployMenu(!toDeployMenu)}>

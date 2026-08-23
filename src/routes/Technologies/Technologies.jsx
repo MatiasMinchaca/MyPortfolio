@@ -28,7 +28,7 @@ const Technologies = () => {
                                     element.docs.length > 210 ? `${element.docs.slice(0, 210)}...` : element.docs
                                 }
                             </p>
-                            <a href={element.link} target="blank">
+                            <a href={element.link} target="_blank" rel="noopener noreferrer">
                                 Leer más
                             </a>
                             <Square1>
