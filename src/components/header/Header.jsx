@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import { 
     Container, 
     LineS, 
@@ -7,6 +7,7 @@ import {
     MenuClose, 
     MenuD,
     Block,
+    ThemeToggle,
     Options } from './Header elements';
 import {
     NavLink,
@@ -17,6 +18,7 @@ import translations from '../../i18n/translations';
 
 const Header = () => {
     const [toDeployMenu, setToDeployMenu] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(() => localStorage.getItem('theme') === 'dark');
     const { pathname } = useLocation();
     const lang = pathname.startsWith('/en') ? 'en' : 'es';
     const t = translations[lang].nav;
@@ -24,6 +26,12 @@ const Header = () => {
     const aboutPath = lang === 'en' ? '/en/about' : '/aboutMe';
     const experiencePath = `${homePath}#experience`;
     const contactPath = `${homePath}#contact`;
+
+    useEffect(() => {
+        document.body.classList.toggle('dark-mode', isDarkMode);
+        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+    }, [isDarkMode]);
+
     return (
         <>
         {/* <AbstractGoldRed src="/images/AbstractGoldRed.jpg" alt="back" /> */}
@@ -66,6 +74,15 @@ const Header = () => {
                 <a href="/cv/Matias Minchaca CV.pdf" download="Curriculum Matias Minchaca">
                     {t.resume}
                 </a>
+                <ThemeToggle
+                    type="button"
+                    isDark={isDarkMode}
+                    onClick={() => setIsDarkMode(!isDarkMode)}
+                    aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+                    title={isDarkMode ? 'Light mode' : 'Dark mode'}
+                >
+                    {isDarkMode ? '☀' : '☾'}
+                </ThemeToggle>
             </DownloadCV>
             <LineS>
             </LineS>

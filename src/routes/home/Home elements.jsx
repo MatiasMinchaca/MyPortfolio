@@ -351,24 +351,29 @@ export const TechStackSection = styled(ProyectsSection)`
     align-items: stretch;
     padding-top: 64px;
     gap: 22px;
+    .sectionIntro {
+        margin-bottom: 28px;
+    }
 `;
 
 export const TechCategoryCard = styled.article`
     width: 100%;
     max-width: 300px;
-    min-height: 250px;
+    min-height: 245px;
     display: flex;
     flex-direction: column;
-    padding: 22px;
+    padding: 24px;
     border-radius: 22px;
-    background: linear-gradient(145deg, #8b0000, #4d0303);
-    box-shadow: 0 14px 35px #4b000024;
+    background: #f7f2f2e8;
+    border: 1px solid #8b000030;
+    border-top: 5px solid #8b0000;
+    box-shadow: 0 14px 35px #4b000014;
     justify-content: flex-start;
     h2 {
-        color: #f3c84e;
-        font-size: 20px;
+        color: #8b0000;
+        font-size: 21px;
         line-height: 1.15;
-        text-shadow: 0 2px 5px #0000008a;
+        text-shadow: none;
         min-height: 46px;
         display: flex;
         align-items: center;
@@ -380,6 +385,10 @@ export const TechCategoryCard = styled.article`
     span {
         font-size: 14px;
         padding: 8px 12px;
+        background: #8b0000;
+        color: #ffffff;
+        font-weight: 700;
+        letter-spacing: 0.1px;
     }
 
     @media screen and (max-width: 720px) {
@@ -577,11 +586,18 @@ export const ProjectTag = styled.span`
     padding: 6px 10px;
     border-radius: 999px;
     background: #c99c0a;
-    color: white;
+    color: #2b0808;
     font-size: 13px;
+    font-weight: 800;
     text-shadow: none;
     position: relative;
     z-index: 1;
+
+    body.dark-mode & {
+        background: #c99c0a !important;
+        color: #ffffff !important;
+        text-shadow: none !important;
+    }
 `;
 
 export const CardProyects = styled.article`

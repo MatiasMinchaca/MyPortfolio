@@ -146,6 +146,9 @@ export const Options = styled.li`
 export const DownloadCV = styled.button`
     background: none;
     border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     a{
         padding: 10px;
         text-decoration: none;
@@ -154,6 +157,26 @@ export const DownloadCV = styled.button`
         border-radius: 5px;
         text-shadow: 0 0 4px #000000bf;
         letter-spacing: 2pt;
+    }
+`;
+
+export const ThemeToggle = styled.button`
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #8b000052;
+    background: ${({ isDark }) => isDark ? '#1b1b1f' : '#ffffff'};
+    color: ${({ isDark }) => isDark ? '#f3c84e' : '#8b0000'};
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px #0000001f;
+    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+    :hover{
+        transform: translateY(-2px) scale(1.04);
+    }
+    :active{
+        transform: scale(0.92);
     }
 `;
 

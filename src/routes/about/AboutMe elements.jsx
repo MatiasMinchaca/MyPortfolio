@@ -169,6 +169,17 @@ export const FirstSectionAbout = styled.div`
             font-size: 17px;
         }
     }
+
+    body.dark-mode & {
+        background: #241a1ae6;
+        color: #f5eeee;
+    }
+
+    body.dark-mode & h2,
+    body.dark-mode & p {
+        color: #f5eeee;
+        text-shadow: none;
+    }
 `;
 
 export const PhotoOne = styled.img`
@@ -261,6 +272,18 @@ export const ThirdSectionAbout = styled.div`
         user-select: none;
         text-align: center;
     }
+
+    body.dark-mode & {
+        background: #3a0808;
+        color: #f5eeee;
+    }
+
+    body.dark-mode & h2,
+    body.dark-mode & h3,
+    body.dark-mode & p {
+        color: #f5eeee;
+        text-shadow: none;
+    }
 `;
 
 export const TrianglesContainer = styled.div`
@@ -274,6 +297,10 @@ export const TrianglesContainer = styled.div`
         fill: #98bce3;
         width: 10%;
         height: 70px;
+    }
+
+    body.dark-mode & > div {
+        border-bottom-color: #3a0808;
     }
 `;
 
@@ -298,6 +325,23 @@ export const HistoryContainer = styled.div`
         font-size: 18px;
         text-shadow: 0 1px 6px #eeeeeea1;
         text-align: justify;    
+        line-height: 1.45;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    body.dark-mode & {
+        color: #f5eeee;
+    }
+
+    body.dark-mode & h3 {
+        color: #f3c84e;
+        text-shadow: none;
+    }
+
+    body.dark-mode & p {
+        color: #f5eeee;
+        text-shadow: none;
     }
 `;
 

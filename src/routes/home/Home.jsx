@@ -40,8 +40,8 @@ const Home = ({ lang = 'es' }) => {
                 <p className="sectionIntro">
                     {t.home.experienceIntro}
                 </p>
-                {t.experience.map((experience) => (
-                    <ExperienceCard key={experience.company}>
+                {t.experience.map((experience, index) => (
+                    <ExperienceCard className={index === 0 ? 'featured-experience' : ''} key={experience.company}>
                         <span>{experience.period}</span>
                         <h2>{experience.company}</h2>
                         <h3>{experience.role}</h3>
@@ -60,7 +60,7 @@ const Home = ({ lang = 'es' }) => {
                     {t.home.projectsIntro}
                 </p>
                 {t.projects.map((project) => (
-                    <SelectedProjectCard key={project.title}>
+                    <SelectedProjectCard className="selected-project-card" key={project.title}>
                         <h2>{project.title}</h2>
                         <h3>{project.subtitle}</h3>
                         <dl>

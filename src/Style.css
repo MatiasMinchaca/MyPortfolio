@@ -14,6 +14,113 @@ body {
   background-size: 40px 40px;
   overflow-x: hidden;
 }
+
+body.dark-mode {
+  background-color: #241212;
+  background-image: linear-gradient(rgba(36, 18, 18, 0.72), rgba(36, 18, 18, 0.72)), url('tie.png');
+  background-position: 0 0, 10px 0;
+  background-attachment: fixed, fixed;
+  background-size: auto, 40px 40px;
+  color: #f5eeee;
+}
+
+body.dark-mode header,
+body.dark-mode [class*="Header"] {
+  background-color: #151519;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode a {
+  color: #f5eeee;
+}
+
+body.dark-mode section,
+body.dark-mode article {
+  border-color: #f3c84e33;
+}
+
+body.dark-mode article {
+  background-color: #1f1f25;
+}
+
+body.dark-mode article h2,
+body.dark-mode article span,
+body.dark-mode dt {
+  color: #f3c84e;
+}
+
+body.dark-mode #experience article:first-of-type {
+  background: #3a0808;
+  border-color: #f3c84e3d;
+  border-left-color: #f3c84e;
+  color: #f5eeee;
+  overflow: hidden;
+}
+
+body.dark-mode #experience article:first-of-type::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #c99c0a2e;
+  position: absolute;
+  right: -54px;
+  top: -62px;
+}
+
+body.dark-mode #experience article:first-of-type h2,
+body.dark-mode #experience article:first-of-type span {
+  color: #f3c84e;
+}
+
+body.dark-mode #experience article:first-of-type p,
+body.dark-mode #experience article:first-of-type li,
+body.dark-mode #experience article:first-of-type h3 {
+  color: #f5eeee;
+}
+
+body.dark-mode .titleProyects,
+body.dark-mode .sectionIntro {
+  color: #f5eeee !important;
+}
+
+body.dark-mode section article {
+  background: #241a1a;
+  border-color: #f3c84e2e;
+}
+
+body.dark-mode .selected-project-card {
+  background: #3a0808;
+  border: 1px solid #f3c84e3d;
+}
+
+body.dark-mode section article h2 {
+  color: #f3c84e;
+}
+
+body.dark-mode section article span {
+  background: #c99c0a !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+body.dark-mode section article dd,
+body.dark-mode section article p,
+body.dark-mode section article li {
+  color: #f5eeee;
+}
+
+body.dark-mode #sw-js-blob-svg path {
+  fill: #5b0202;
+}
+
+body.dark-mode footer svg {
+  opacity: 0.8;
+}
 body::-webkit-scrollbar {
   -webkit-appearance: none;
 }
