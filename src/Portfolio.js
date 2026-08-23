@@ -48,11 +48,15 @@ function Portfolio() {
       <Header />
       <Suspense fallback={<Loading />}>
         <Routes>
+          <Route path="/en" element={<Home lang="en" />}>
+          </Route>
+          <Route path="/en/about" element={<AboutMe lang="en" />}>
+          </Route>
           <Route path="/technologies" element={<Technologies />}>
           </Route>
-          <Route path="/aboutMe" element={<AboutMe />}>
+          <Route path="/aboutMe" element={<AboutMe lang="es" />}>
           </Route>
-          <Route path="/" element={<Home />}>
+          <Route path="/" element={<Home lang="es" />}>
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -6,11 +6,13 @@ import {
     ContainerText
 } from "./I'mMatias elements";
 import getAge from '../utils/getAge';
+import translations from '../i18n/translations';
 
 const birthDate = new Date(2001, 8, 12);
 
-const ImMatias = () => {
+const ImMatias = ({ lang = 'es' }) => {
     const age = getAge(birthDate);
+    const t = translations[lang].hero;
 
     return (
         <FirstSection>
@@ -46,22 +48,22 @@ const ImMatias = () => {
                     Matías Minchaca
                 </h1>
                 <h2>
-                    Full-Stack Technical Developer
+                    {t.title}
                 </h2>
                 <p>
-                    WordPress, WooCommerce, APIs, automatizacion y backend.
+                    {t.subtitle}
                 </p>
                 <h3>
-                    {age} años
+                    {age} {t.ageSuffix}
                     <br />
-                    Argentino · Sevilla, España
+                    {t.location}
                 </h3>
                 <div className="heroActions">
                     <a href="#experience" className="more">
-                        Ver experiencia
+                        {t.experience}
                     </a>
                     <a href="#contact" className="more secondary">
-                        Contactarme
+                        {t.contact}
                     </a>
                 </div>
             </ContainerText>

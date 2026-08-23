@@ -83,7 +83,7 @@ export const MenuD = styled.div`
         height: 100%;
         flex-direction: row;
         height: 100%;
-        width: 50%;
+        width: 62%;
         opacity: 1;
         transition: none;
         justify-content: space-between;

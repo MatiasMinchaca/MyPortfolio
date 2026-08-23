@@ -23,11 +23,13 @@ import HandIcon from '../../components/icons/HandIcon';
 import Triangle from '../../components/icons/Triangle';
 import { NavLink } from 'react-router-dom';
 import getAge from '../../utils/getAge';
+import translations from '../../i18n/translations';
 
 const birthDate = new Date(2001, 8, 12);
 
-const AboutMe = () => {
+const AboutMe = ({ lang = 'es' }) => {
     const age = getAge(birthDate);
+    const t = translations[lang];
 
     return (
         <ContainerAbout>
@@ -63,45 +65,33 @@ const AboutMe = () => {
                     Matías Minchaca
                 </h1>
                 <h2>
-                    Full-Stack Technical Developer
+                    {t.hero.title}
                 </h2>
                 <p>
-                    WordPress, WooCommerce, APIs, automatizacion y backend.
+                    {t.hero.subtitle}
                 </p>
                 <h3>
-                    {age} años
+                    {age} {t.hero.ageSuffix}
                     <br />
-                    Argentino · Sevilla, España
+                    {t.hero.location}
                 </h3>
                 <div className="heroActions">
-                    <NavLink to='/' className={'back'}>
-                        Inicio
+                    <NavLink to={lang === 'en' ? '/en' : '/'} className={'back'}>
+                        {t.hero.home}
                     </NavLink>
-                    <a href='/#contact' className="back secondary">
-                        Contacto
+                    <a href={lang === 'en' ? '/en#contact' : '/#contact'} className="back secondary">
+                        {t.nav.contact}
                     </a>
                 </div>
             </ContainerTextAbout>
             <FirstSectionAbout>
                 <PhotoOne src='/images/photoThree.png' />
                 <h2>
-                    Sobre Mí
+                    {t.about.title}
                 </h2>
-                <p>
-                    Soy Full-Stack Technical Developer con foco en WordPress, WooCommerce, integraciones, automatizacion y soporte tecnico avanzado. Me especializo en resolver problemas que mezclan codigo, CMS, APIs, servidores, hosting, DNS y herramientas de negocio.
-                </p>
-                <p>
-                    Desde octubre de 2024 trabajo en Bululu Agency participando en proyectos para clientes como Polestar Pilates, T-ROC Global e ISECO. Mi trabajo incluye desarrollo y mantenimiento WordPress/WooCommerce, integraciones con APIs, automatizaciones con n8n, soporte de sitios en produccion, migraciones, seguridad y configuracion de entornos.
-                </p>
-                <p>
-                    Mi diferencial es tomar una incidencia ambigua y seguir el rastro hasta encontrar la causa: puede estar en un plugin, una API, una base de datos, permisos Linux, PHP-FPM, .htaccess, SSL, DNS o una automatizacion mal conectada.
-                </p>
-                <p>
-                    Tambien estoy desarrollando proyectos propios con Python, FastAPI, SQLite y Raspberry Pi, explorando monitoreo, self-hosting, procesos persistentes y arquitectura backend ligera.
-                </p>
-                <p>
-                    Me interesa construir soluciones que funcionen en produccion, sean mantenibles y conecten bien las necesidades del negocio con la implementacion tecnica.
-                </p>
+                {t.about.paragraphs.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                ))}
 
             </FirstSectionAbout>
             <SecondSectionAbout>
@@ -168,20 +158,19 @@ const AboutMe = () => {
                     <Triangle left='120%' />
                 </TrianglesContainer>
                 <HistoryTitle>
-                    Perfil técnico actual
+                    {t.about.currentProfileTitle}
                 </HistoryTitle>
                 <HistoryContainer>
                     <h3>
-                        Desarrollo, integraciones, automatizacion e infraestructura tecnica.
+                        {t.about.currentProfileSubtitle}
                     </h3>
                     <p>
-                        Actualmente mi perfil combina desarrollo web, soporte tecnico e integraciones. Trabajo principalmente con WordPress, WooCommerce, PHP, JavaScript, APIs REST, automatizaciones con n8n y herramientas de marketing/CRM.
-                        <br />
-                        Tambien tengo experiencia practica en hosting, migraciones, DNS, SSL, Linux, permisos, .htaccess, PHP-FPM, seguridad WordPress y resolucion de problemas en entornos productivos.
-                        <br />
-                        En paralelo, estoy fortaleciendo backend con Python, FastAPI, SQLite, testing y despliegues simples en Raspberry Pi, usando Git/GitHub y SSH como parte de mi flujo de trabajo.
-                        <br />
-                        Busco seguir creciendo como desarrollador tecnico capaz de diagnosticar, implementar y mantener soluciones completas, desde la funcionalidad visible hasta la infraestructura que la sostiene.
+                        {t.about.currentProfileParagraph.split('\n').map((line) => (
+                            <React.Fragment key={line}>
+                                {line}
+                                <br />
+                            </React.Fragment>
+                        ))}
                     </p>
                 </HistoryContainer>
             </ThirdSectionAbout>

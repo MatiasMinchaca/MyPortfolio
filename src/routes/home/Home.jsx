@@ -14,19 +14,21 @@ import {
     TechStackSection,
 } from "./Home elements";
 import ImMatias from "../../components/I'mMatias";
-import { ExperienceDB, SelectedProjectsDB, ServicesDB, TechCategoriesDB } from "./HomeDB";
 import FormContact from '../../components/formContact/FormContact';
+import translations from '../../i18n/translations';
 
-const Home = () => {
+const Home = ({ lang = 'es' }) => {
+    const t = translations[lang];
+
     return (
         <Container>
-            <ImMatias />
+            <ImMatias lang={lang} />
             <ServicesSection>
-                <h2 className="titleProyects">Qué hago</h2>
+                <h2 className="titleProyects">{t.home.servicesTitle}</h2>
                 <p className="sectionIntro">
-                    Resuelvo problemas tecnicos que cruzan codigo, CMS, APIs, automatizacion e infraestructura.
+                    {t.home.servicesIntro}
                 </p>
-                {ServicesDB.map((service) => (
+                {t.services.map((service) => (
                     <ServiceCard key={service.title}>
                         <h2>{service.title}</h2>
                         <p>{service.description}</p>
@@ -34,11 +36,11 @@ const Home = () => {
                 ))}
             </ServicesSection>
             <ExperienceSection id="experience">
-                <h2 className="titleProyects">Experiencia Profesional</h2>
+                <h2 className="titleProyects">{t.home.experienceTitle}</h2>
                 <p className="sectionIntro">
-                    Perfil tecnico hibrido: desarrollo web, WordPress/WooCommerce, integraciones, automatizacion y soporte de sistemas en produccion.
+                    {t.home.experienceIntro}
                 </p>
-                {ExperienceDB.map((experience) => (
+                {t.experience.map((experience) => (
                     <ExperienceCard key={experience.company}>
                         <span>{experience.period}</span>
                         <h2>{experience.company}</h2>
@@ -53,25 +55,25 @@ const Home = () => {
                 ))}
             </ExperienceSection>
             <ProyectsSection>
-                <h2 className="titleProyects">Proyectos Seleccionados</h2>
+                <h2 className="titleProyects">{t.home.projectsTitle}</h2>
                 <p className="sectionIntro">
-                    Casos reales donde combine desarrollo, infraestructura, APIs, automatizacion y resolucion tecnica.
+                    {t.home.projectsIntro}
                 </p>
-                {SelectedProjectsDB.map((project) => (
+                {t.projects.map((project) => (
                     <SelectedProjectCard key={project.title}>
                         <h2>{project.title}</h2>
                         <h3>{project.subtitle}</h3>
                         <dl>
                             <div>
-                                <dt>Rol</dt>
+                                <dt>{t.home.role}</dt>
                                 <dd>{project.role}</dd>
                             </div>
                             <div>
-                                <dt>Problema</dt>
+                                <dt>{t.home.problem}</dt>
                                 <dd>{project.problem}</dd>
                             </div>
                             <div>
-                                <dt>Solución</dt>
+                                <dt>{t.home.solution}</dt>
                                 <dd>{project.solution}</dd>
                             </div>
                         </dl>
@@ -84,11 +86,11 @@ const Home = () => {
                 ))}
             </ProyectsSection>
             <TechStackSection>
-                <h2 className="titleProyects">Stack Técnico</h2>
+                <h2 className="titleProyects">{t.home.stackTitle}</h2>
                 <p className="sectionIntro">
-                    Tecnologias agrupadas por uso real en proyectos, integraciones, soporte e infraestructura.
+                    {t.home.stackIntro}
                 </p>
-                {TechCategoriesDB.map((category) => (
+                {t.stack.map((category) => (
                     <TechCategoryCard key={category.title}>
                         <h2>{category.title}</h2>
                         <TagsContainer>
@@ -99,7 +101,7 @@ const Home = () => {
                     </TechCategoryCard>
                 ))}
             </TechStackSection>
-            <FormContact />
+            <FormContact lang={lang} />
         </Container>
     );
 };
