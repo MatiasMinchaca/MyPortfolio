@@ -303,3 +303,114 @@ export const ProyectsDB = [
         ]
     }, */
 ]
+
+export const ExperienceDB = [
+    {
+        company: 'Bululu Agency',
+        period: 'Octubre 2024 - Actualidad',
+        role: 'Technical Developer',
+        description: 'Participacion en proyectos para clientes como Polestar Pilates, T-ROC Global e ISECO, trabajando en desarrollo, mantenimiento, integraciones, automatizaciones, infraestructura y soporte tecnico.',
+        highlights: [
+            'WordPress, WooCommerce, PHP y desarrollo de funcionalidades.',
+            'Integraciones con APIs REST, D2L Brightspace, Stripe, PayPal y CRMs.',
+            'Automatizaciones con n8n y flujos entre plataformas externas.',
+            'Migraciones, DNS, SSL, hosting, permisos Linux, .htaccess y PHP-FPM.',
+            'Analisis de seguridad, actualizaciones y resolucion de incidencias en produccion.'
+        ]
+    },
+    {
+        company: 'Tuxdi',
+        period: '2024',
+        role: 'Web Developer',
+        description: 'Experiencia en desarrollo web, mantenimiento de sitios y resolucion de requerimientos tecnicos para proyectos digitales.',
+        highlights: [
+            'Desarrollo y mantenimiento web.',
+            'Trabajo con sitios en produccion.',
+            'Soporte tecnico y mejora de funcionalidades.'
+        ]
+    },
+    {
+        company: 'Pukara',
+        period: '2022 - 2023',
+        role: 'Web Developer',
+        description: 'Primeras experiencias profesionales en desarrollo web, soporte y mantenimiento de proyectos.',
+        highlights: [
+            'Desarrollo de interfaces y funcionalidades web.',
+            'Mantenimiento y soporte de sitios.',
+            'Colaboracion en equipos de trabajo.'
+        ]
+    }
+]
+
+export const ServicesDB = [
+    {
+        title: 'WordPress & WooCommerce',
+        description: 'Desarrollo, mantenimiento, plugins, performance, seguridad y soporte de plataformas en produccion.'
+    },
+    {
+        title: 'Integraciones & APIs',
+        description: 'Conexion entre sistemas externos, CRMs, plataformas educativas, pasarelas de pago y servicios REST.'
+    },
+    {
+        title: 'Automatizacion',
+        description: 'Flujos con n8n, subworkflows, HTTP requests, procesos internos y sincronizacion entre herramientas.'
+    },
+    {
+        title: 'Backend & Soporte Tecnico',
+        description: 'PHP, Python, FastAPI, SQL, Linux, hosting, DNS, SSL, migraciones y diagnostico de incidencias.'
+    }
+]
+
+export const TechCategoriesDB = [
+    {
+        title: 'Core Web',
+        items: ['WordPress', 'WooCommerce', 'PHP', 'JavaScript', 'HTML', 'CSS']
+    },
+    {
+        title: 'Backend',
+        items: ['Python', 'FastAPI', 'SQL', 'APIs REST', 'SQLite', 'PHP-FPM']
+    },
+    {
+        title: 'Automatizacion',
+        items: ['n8n', 'Mautic', 'ActiveCampaign', 'Mailchimp', 'Chatwoot', 'CRM']
+    },
+    {
+        title: 'Infraestructura',
+        items: ['Linux', 'Docker', 'DNS', 'SSL', 'Hosting', 'Raspberry Pi', 'Git/GitHub']
+    }
+]
+
+export const SelectedProjectsDB = [
+    {
+        title: 'Polestar Pilates',
+        subtitle: 'Proyecto cliente desde Bululu Agency',
+        role: 'Desarrollo, soporte tecnico e integraciones.',
+        problem: 'Plataformas WordPress/WooCommerce con procesos conectados a sistemas externos, pagos, enrollment y automatizaciones.',
+        solution: 'Mantenimiento de funcionalidades, integraciones API, automatizaciones con n8n, soporte de pagos/suscripciones y mejoras tecnicas del sitio.',
+        tags: ['WordPress', 'WooCommerce', 'APIs', 'n8n', 'D2L', 'Stripe', 'SEO tecnico']
+    },
+    {
+        title: 'T-ROC Global',
+        subtitle: 'Proyecto cliente desde Bululu Agency',
+        role: 'Mantenimiento web y soporte tecnico.',
+        problem: 'Sitios WordPress en produccion con necesidades de actualizacion, formularios, integraciones y resolucion de incidencias.',
+        solution: 'Desarrollo de paginas y funcionalidades, trabajo con Elementor, ajustes de formularios e integraciones y soporte tecnico continuo.',
+        tags: ['WordPress', 'Elementor', 'Formularios', 'Integraciones', 'Soporte']
+    },
+    {
+        title: 'ISECO',
+        subtitle: 'Proyecto cliente desde Bululu Agency',
+        role: 'Migracion, infraestructura y seguridad WordPress.',
+        problem: 'Necesidad de migrar hosting y poner a punto un entorno WordPress con cambios de PHP, DNS, SSL y configuracion de servidor.',
+        solution: 'Revision de permisos, .htaccess, PHP, SSL, DNS, plugins, seguridad y resolucion de problemas del entorno.',
+        tags: ['WordPress', 'Hosting', 'PHP', 'DNS', 'SSL', 'Linux', 'Seguridad']
+    },
+    {
+        title: 'Monitoring Platform',
+        subtitle: 'Proyecto personal',
+        role: 'Backend, infraestructura ligera y self-hosting.',
+        problem: 'Necesidad de monitorear disponibilidad de sitios y servicios con ejecucion continua fuera de la PC principal.',
+        solution: 'Plataforma con Python, FastAPI, SQLite y Raspberry Pi, orientada a monitoreo, logs, ejecucion persistente y futuras notificaciones.',
+        tags: ['Python', 'FastAPI', 'SQLite', 'Raspberry Pi', 'Linux', 'Monitoring']
+    }
+]

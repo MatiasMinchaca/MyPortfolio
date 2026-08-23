@@ -1,91 +1,104 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import { Link } from "react-router-dom";
 import {
-    Card,
-    CardProyects,
     Container,
-    ContainerCards,
-    ContainerTechProyects,
-    TechnologiesSection,
-    Square1,
-    Square2,
-    TextCard,
+    ExperienceCard,
+    ExperienceSection,
+    ProjectTag,
     ProyectsSection,
-    TittleTec,
+    ServiceCard,
+    ServicesSection,
+    SelectedProjectCard,
+    TagsContainer,
+    TechCategoryCard,
+    TechStackSection,
 } from "./Home elements";
-import ArrowRightIcon from '../../components/icons/ArrowRightIcon';
 import ImMatias from "../../components/I'mMatias";
-import { TechnologiesDB, ProyectsDB } from "./HomeDB";
-import SlideImage from '../../components/SlideImages/SlideImage';
+import { ExperienceDB, SelectedProjectsDB, ServicesDB, TechCategoriesDB } from "./HomeDB";
 import FormContact from '../../components/formContact/FormContact';
 
 const Home = () => {
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    };
-
     return (
         <Container>
             <ImMatias />
-            <ProyectsSection>
-                <h1 className="titleProyects">Mis Proyectos</h1>
-                {ProyectsDB.map((proyect) => (
-                    <CardProyects key={proyect.title}>
-                        <Square1></Square1>
-                        <Square2></Square2>
-                        <h2>{proyect.title}</h2>
-                        <h3>{proyect.subtitle}</h3>
-                        <p>{proyect.description}</p>
-                        <SlideImage slideImages={proyect.images} />
-                        <h3>Tecnologías usadas:</h3>
-                        <ContainerTechProyects>
-                            {proyect.technologies.map((tech) => (
-                                <article key={tech.name}>{tech.icon}</article>
+            <ServicesSection>
+                <h1 className="titleProyects">Qué hago</h1>
+                <p className="sectionIntro">
+                    Resuelvo problemas tecnicos que cruzan codigo, CMS, APIs, automatizacion e infraestructura.
+                </p>
+                {ServicesDB.map((service) => (
+                    <ServiceCard key={service.title}>
+                        <h2>{service.title}</h2>
+                        <p>{service.description}</p>
+                    </ServiceCard>
+                ))}
+            </ServicesSection>
+            <ExperienceSection id="experience">
+                <h1 className="titleProyects">Experiencia Profesional</h1>
+                <p className="sectionIntro">
+                    Perfil tecnico hibrido: desarrollo web, WordPress/WooCommerce, integraciones, automatizacion y soporte de sistemas en produccion.
+                </p>
+                {ExperienceDB.map((experience) => (
+                    <ExperienceCard key={experience.company}>
+                        <span>{experience.period}</span>
+                        <h2>{experience.company}</h2>
+                        <h3>{experience.role}</h3>
+                        <p>{experience.description}</p>
+                        <ul>
+                            {experience.highlights.map((highlight) => (
+                                <li key={highlight}>{highlight}</li>
                             ))}
-                        </ContainerTechProyects>
-                        <a href={proyect.link} target="github">
-                            Enlace al repositorio <ArrowRightIcon />
-                        </a>
-                    </CardProyects>
+                        </ul>
+                    </ExperienceCard>
+                ))}
+            </ExperienceSection>
+            <ProyectsSection>
+                <h1 className="titleProyects">Proyectos Seleccionados</h1>
+                <p className="sectionIntro">
+                    Casos reales donde combine desarrollo, infraestructura, APIs, automatizacion y resolucion tecnica.
+                </p>
+                {SelectedProjectsDB.map((project) => (
+                    <SelectedProjectCard key={project.title}>
+                        <h2>{project.title}</h2>
+                        <h3>{project.subtitle}</h3>
+                        <dl>
+                            <div>
+                                <dt>Rol</dt>
+                                <dd>{project.role}</dd>
+                            </div>
+                            <div>
+                                <dt>Problema</dt>
+                                <dd>{project.problem}</dd>
+                            </div>
+                            <div>
+                                <dt>Solución</dt>
+                                <dd>{project.solution}</dd>
+                            </div>
+                        </dl>
+                        <TagsContainer>
+                            {project.tags.map((tag) => (
+                                <ProjectTag key={tag}>{tag}</ProjectTag>
+                            ))}
+                        </TagsContainer>
+                    </SelectedProjectCard>
                 ))}
             </ProyectsSection>
-            <TechnologiesSection>
-                <TittleTec>
-                    Tecnologías
-                </TittleTec>
-                {TechnologiesDB.map((element) => (
-                    <ContainerCards
-                        key={element.name}
-                    >
-                        <Card>
-                            {element.icon}
-                            <h2>{element.name}</h2>
-                            <p>
-                                {element.docs.length > 210
-                                    ? `${element.docs.slice(0, 210)}...`
-                                    : element.docs}
-                            </p>
-                            <a href={element.link} target="blank">
-                                Leer más
-                            </a>
-                            <Square1></Square1>
-                            <Square2></Square2>
-                        </Card>
-                        <TextCard></TextCard>
-                    </ContainerCards>
+            <TechStackSection>
+                <h1 className="titleProyects">Stack Técnico</h1>
+                <p className="sectionIntro">
+                    Tecnologias agrupadas por uso real en proyectos, integraciones, soporte e infraestructura.
+                </p>
+                {TechCategoriesDB.map((category) => (
+                    <TechCategoryCard key={category.title}>
+                        <h2>{category.title}</h2>
+                        <TagsContainer>
+                            {category.items.map((item) => (
+                                <ProjectTag key={item}>{item}</ProjectTag>
+                            ))}
+                        </TagsContainer>
+                    </TechCategoryCard>
                 ))}
-                <Link
-                    className="moreTec"
-                    to="/technologies"
-                    onClick={scrollToTop}
-                >
-                    Ver más
-                </Link>
-            </TechnologiesSection>
+            </TechStackSection>
             <FormContact />
         </Container>
     );

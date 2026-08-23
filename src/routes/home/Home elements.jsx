@@ -278,7 +278,7 @@ export const Square2 = styled.div`
 
 export const ProyectsSection = styled.div`
     position: relative;
-    width: 100%;
+    width: min(1180px, calc(100% - 32px));
     height: fit-content;
     z-index: 10;
     display: flex;
@@ -287,14 +287,301 @@ export const ProyectsSection = styled.div`
     align-items: center;
     justify-content: center;
     padding: 5px;
-    padding-top: 70px;
-    margin-bottom: 70px;
-    gap: 30px;
+    padding-top: 42px;
+    margin-bottom: 80px;
+    gap: 22px;
     .titleProyects {
-        position: absolute;
-        top: 0;
+        width: 100%;
+        flex: 0 0 100%;
         text-align: center;
+        color: #210202;
+        font-size: clamp(28px, 4vw, 42px);
+        line-height: 1;
+        margin-bottom: 8px;
     }
+    .sectionIntro {
+        width: min(760px, 100%);
+        flex: 0 0 100%;
+        margin: 0 auto 18px;
+        text-align: center;
+        color: #4b1c1c;
+        font-size: 17px;
+        line-height: 1.45;
+        font-weight: 700;
+    }
+`;
+
+export const ExperienceSection = styled(ProyectsSection)`
+    margin-bottom: 72px;
+`;
+
+export const ServicesSection = styled(ProyectsSection)`
+    margin-bottom: 72px;
+    align-items: stretch;
+`;
+
+export const ServiceCard = styled.article`
+    width: 100%;
+    max-width: 260px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 22px;
+    border-radius: 22px;
+    background: #f7f2f2e8;
+    border: 1px solid #8b000030;
+    border-top: 5px solid #8b0000;
+    box-shadow: 0 14px 35px #4b000014;
+    color: #250404;
+    h2 {
+        color: #8b0000;
+        font-size: 20px;
+        line-height: 1.15;
+    }
+    p {
+        margin-top: 12px;
+        line-height: 1.45;
+        font-weight: 600;
+    }
+`;
+
+export const TechStackSection = styled(ProyectsSection)`
+    margin-bottom: 72px;
+    align-items: stretch;
+    padding-top: 64px;
+    gap: 22px;
+`;
+
+export const TechCategoryCard = styled.article`
+    width: 100%;
+    max-width: 300px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #8b0000, #4d0303);
+    box-shadow: 0 14px 35px #4b000024;
+    justify-content: flex-start;
+    h2 {
+        color: #f3c84e;
+        font-size: 20px;
+        line-height: 1.15;
+        text-shadow: 0 2px 5px #0000008a;
+        min-height: 46px;
+        display: flex;
+        align-items: center;
+    }
+    div {
+        margin-top: 18px;
+        align-content: flex-start;
+    }
+    span {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    @media screen and (max-width: 720px) {
+        max-width: 100%;
+        min-height: auto;
+    }
+`;
+
+export const ExperienceCard = styled.article`
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    border: 1px solid #8b000033;
+    border-radius: 22px;
+    margin: 5px 0;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    background: #f7f2f2e8;
+    box-shadow: 0 18px 45px #4b000017;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+    :hover {
+        transform: translateY(-4px);
+        box-shadow: 0 24px 55px #4b000024;
+    }
+    :first-of-type {
+        max-width: 100%;
+        min-height: auto;
+        color: #250404;
+        background: linear-gradient(90deg, #fff8f8, #f8eeee);
+        border: 1px solid #8b00004a;
+        border-left: 8px solid #8b0000;
+        text-shadow: none;
+    }
+    :first-of-type p,
+    :first-of-type li,
+    :first-of-type h3 {
+        color: #250404;
+    }
+    :first-of-type span,
+    :first-of-type h2 {
+        color: #8b0000;
+    }
+    :first-of-type ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 8px 24px;
+        padding-left: 0;
+    }
+    :first-of-type li {
+        list-style: none;
+        padding-left: 18px;
+        position: relative;
+    }
+    :first-of-type li::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #c99c0a;
+        position: absolute;
+        left: 0;
+        top: 9px;
+    }
+    span {
+        color: #8b0000;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    h2 {
+        color: #8b0000;
+        font-size: 25px;
+        line-height: 1.1;
+    }
+    h3 {
+        margin-top: 5px;
+        font-size: 18px;
+        line-height: 1.25;
+    }
+    p {
+        text-align: left;
+        margin-top: 12px;
+        line-height: 1.5;
+    }
+    ul {
+        margin-top: 12px;
+        padding-left: 18px;
+    }
+    li {
+        list-style: disc;
+        margin-top: 8px;
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+    @media screen and (max-width: 640px) {
+        padding: 18px;
+        font-size: 15px;
+        :first-of-type {
+            border-left-width: 5px;
+        }
+        :first-of-type ul {
+            grid-template-columns: 1fr;
+        }
+        h2 {
+            font-size: 22px;
+        }
+    }
+`;
+
+export const SelectedProjectCard = styled.article`
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 22px;
+    margin: 5px 0;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(145deg, #8b0000, #4d0303);
+    box-shadow: 0 18px 45px #4b000026;
+    text-shadow: 0 2px 5px #0000008a;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    :hover {
+        transform: translateY(-4px);
+        box-shadow: 0 24px 55px #4b000036;
+    }
+    ::after {
+        content: "";
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: #c99c0a2e;
+        position: absolute;
+        right: -54px;
+        top: -62px;
+    }
+    h2 {
+        color: #f3c84e;
+        position: relative;
+        z-index: 1;
+    }
+    h3 {
+        margin-top: 5px;
+        position: relative;
+        z-index: 1;
+        min-height: 28px;
+    }
+    dl {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 14px;
+        position: relative;
+        z-index: 1;
+        flex: 1;
+    }
+    dt {
+        color: #f3c84e;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+    }
+    dd {
+        margin: 0;
+        line-height: 1.35;
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: 640px) {
+        height: auto;
+        min-height: 320px;
+    }
+`;
+
+export const TagsContainer = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 18px;
+`;
+
+export const ProjectTag = styled.span`
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #c99c0a;
+    color: white;
+    font-size: 13px;
+    text-shadow: none;
+    position: relative;
+    z-index: 1;
 `;
 
 export const CardProyects = styled.article`
