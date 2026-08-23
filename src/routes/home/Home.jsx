@@ -22,7 +22,7 @@ const Home = () => {
         <Container>
             <ImMatias />
             <ServicesSection>
-                <h1 className="titleProyects">Qué hago</h1>
+                <h2 className="titleProyects">Qué hago</h2>
                 <p className="sectionIntro">
                     Resuelvo problemas tecnicos que cruzan codigo, CMS, APIs, automatizacion e infraestructura.
                 </p>
@@ -34,7 +34,7 @@ const Home = () => {
                 ))}
             </ServicesSection>
             <ExperienceSection id="experience">
-                <h1 className="titleProyects">Experiencia Profesional</h1>
+                <h2 className="titleProyects">Experiencia Profesional</h2>
                 <p className="sectionIntro">
                     Perfil tecnico hibrido: desarrollo web, WordPress/WooCommerce, integraciones, automatizacion y soporte de sistemas en produccion.
                 </p>
@@ -53,7 +53,7 @@ const Home = () => {
                 ))}
             </ExperienceSection>
             <ProyectsSection>
-                <h1 className="titleProyects">Proyectos Seleccionados</h1>
+                <h2 className="titleProyects">Proyectos Seleccionados</h2>
                 <p className="sectionIntro">
                     Casos reales donde combine desarrollo, infraestructura, APIs, automatizacion y resolucion tecnica.
                 </p>
@@ -84,7 +84,7 @@ const Home = () => {
                 ))}
             </ProyectsSection>
             <TechStackSection>
-                <h1 className="titleProyects">Stack Técnico</h1>
+                <h2 className="titleProyects">Stack Técnico</h2>
                 <p className="sectionIntro">
                     Tecnologias agrupadas por uso real en proyectos, integraciones, soporte e infraestructura.
                 </p>
