@@ -38,21 +38,21 @@ const translations = {
         experience: [
             {
                 company: 'Bululu Agency',
-                period: 'Octubre 2024 - Actualidad',
+                period: 'Noviembre 2024 - Actualidad',
                 role: 'Technical Developer',
                 description: 'Participacion en proyectos para clientes como Polestar Pilates, T-ROC Global e ISECO, trabajando en desarrollo, mantenimiento, integraciones, automatizaciones, infraestructura y soporte tecnico.',
                 highlights: ['WordPress, WooCommerce, PHP y desarrollo de funcionalidades.', 'Integraciones con APIs REST, D2L Brightspace, Stripe, PayPal y CRMs.', 'Automatizaciones con n8n y flujos entre plataformas externas.', 'Migraciones, DNS, SSL, hosting, permisos Linux, .htaccess y PHP-FPM.', 'Analisis de seguridad, actualizaciones y resolucion de incidencias en produccion.']
             },
             {
                 company: 'Tuxdi',
-                period: '2024',
+                period: 'Abril 2023 - Diciembre 2023',
                 role: 'Web Developer',
                 description: 'Experiencia en desarrollo web, mantenimiento de sitios y resolucion de requerimientos tecnicos para proyectos digitales.',
                 highlights: ['Desarrollo y mantenimiento web.', 'Trabajo con sitios en produccion.', 'Soporte tecnico y mejora de funcionalidades.']
             },
             {
                 company: 'Pukara',
-                period: '2022 - 2023',
+                period: 'Mayo 2022 - Febrero 2023',
                 role: 'Web Developer',
                 description: 'Primeras experiencias profesionales en desarrollo web, soporte y mantenimiento de proyectos.',
                 highlights: ['Desarrollo de interfaces y funcionalidades web.', 'Mantenimiento y soporte de sitios.', 'Colaboracion en equipos de trabajo.']
@@ -128,21 +128,21 @@ const translations = {
         experience: [
             {
                 company: 'Bululu Agency',
-                period: 'October 2024 - Present',
+                period: 'November 2024 - Present',
                 role: 'Technical Developer',
                 description: 'Participation in client projects such as Polestar Pilates, T-ROC Global and ISECO, working on development, maintenance, integrations, automation, infrastructure and technical support.',
                 highlights: ['WordPress, WooCommerce, PHP and feature development.', 'REST API integrations, D2L Brightspace, Stripe, PayPal and CRMs.', 'n8n automations and workflows between external platforms.', 'Migrations, DNS, SSL, hosting, Linux permissions, .htaccess and PHP-FPM.', 'Security analysis, updates and production incident resolution.']
             },
             {
                 company: 'Tuxdi',
-                period: '2024',
+                period: 'April 2023 - December 2023',
                 role: 'Web Developer',
                 description: 'Experience in web development, website maintenance and technical requirements for digital projects.',
                 highlights: ['Web development and maintenance.', 'Work on production websites.', 'Technical support and feature improvements.']
             },
             {
                 company: 'Pukara',
-                period: '2022 - 2023',
+                period: 'May 2022 - February 2023',
                 role: 'Web Developer',
                 description: 'Early professional experience in web development, support and project maintenance.',
                 highlights: ['Web interfaces and feature development.', 'Website maintenance and support.', 'Collaboration in work teams.']
