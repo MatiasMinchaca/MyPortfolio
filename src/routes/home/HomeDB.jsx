@@ -307,9 +307,11 @@ export const ProyectsDB = [
 export const ExperienceDB = [
     {
         company: 'Bululu Agency',
-        period: 'Octubre 2024 - Actualidad',
-        role: 'Technical Developer',
-        description: 'Participacion en proyectos para clientes como Polestar Pilates, T-ROC Global e ISECO, trabajando en desarrollo, mantenimiento, integraciones, automatizaciones, infraestructura y soporte tecnico.',
+        period: 'Noviembre 2024 - Actualidad',
+        role: 'Full-stack Developer',
+        companyDetails: 'Bululu Agency · Jornada completa',
+        location: 'Tallin, Condado de Harju, Estonia · En remoto',
+        description: 'Desarrollo soluciones a medida en WordPress y WooCommerce, incluyendo themes y plugins personalizados. Mi foco esta en performance, technical SEO, automatizacion de procesos e integraciones de sistemas para optimizar flujos y escalar proyectos digitales.',
         highlights: [
             'WordPress, WooCommerce, PHP y desarrollo de funcionalidades.',
             'Integraciones con APIs REST, D2L Brightspace, Stripe, PayPal y CRMs.',
@@ -319,25 +321,29 @@ export const ExperienceDB = [
         ]
     },
     {
-        company: 'Tuxdi',
-        period: '2024',
-        role: 'Web Developer',
-        description: 'Experiencia en desarrollo web, mantenimiento de sitios y resolucion de requerimientos tecnicos para proyectos digitales.',
+        company: 'Pukara',
+        period: 'Mayo 2022 - Octubre 2024',
+        role: 'Desarrollador full stack',
+        companyDetails: 'Pukara',
+        location: 'Madrid, Comunidad de Madrid, Espana',
+        description: 'Participacion en proyectos utilizando Vue.js, Next.js, WordPress y Laravel.',
         highlights: [
-            'Desarrollo y mantenimiento web.',
-            'Trabajo con sitios en produccion.',
-            'Soporte tecnico y mejora de funcionalidades.'
+            'Optimizacion del rendimiento y velocidad de carga de sitios web.',
+            'Aplicacion de buenas practicas de desarrollo para mejorar la calidad y estabilidad del codigo.',
+            'Colaboracion con equipos multidisciplinarios para entregar soluciones dentro de los plazos establecidos.'
         ]
     },
     {
-        company: 'Pukara',
-        period: '2022 - 2023',
-        role: 'Web Developer',
-        description: 'Primeras experiencias profesionales en desarrollo web, soporte y mantenimiento de proyectos.',
+        company: 'Tuxdi',
+        period: 'Abril 2023 - Septiembre 2023',
+        role: 'Desarrollador full stack',
+        companyDetails: 'Tuxdi · Profesional independiente',
+        location: 'Argentina · En remoto',
+        description: 'Desarrollo de soluciones para sitios basados en WordPress y PHP, trabajando tanto en frontend como en backend.',
         highlights: [
-            'Desarrollo de interfaces y funcionalidades web.',
-            'Mantenimiento y soporte de sitios.',
-            'Colaboracion en equipos de trabajo.'
+            'Implementacion de nuevas funcionalidades y optimizaciones orientadas a mejorar la experiencia de usuario y el rendimiento.',
+            'Desarrollo de interfaces web y mantenimiento de funcionalidades existentes.',
+            'Implementacion de procesos de testing y despliegue para mejorar la calidad y estabilidad de las entregas.'
         ]
     }
 ]

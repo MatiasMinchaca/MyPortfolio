@@ -8,8 +8,8 @@ const translations = {
             resume: 'Descargar CV'
         },
         hero: {
-            title: 'Full-Stack Technical Developer',
-            subtitle: 'WordPress, WooCommerce, APIs, automatizacion y backend.',
+            title: 'Full-stack Developer',
+            subtitle: 'WordPress, WooCommerce, PHP, technical SEO, automatizacion e integraciones.',
             location: 'Argentino · Sevilla, España',
             ageSuffix: 'años',
             experience: 'Ver experiencia',
@@ -39,23 +39,29 @@ const translations = {
             {
                 company: 'Bululu Agency',
                 period: 'Noviembre 2024 - Actualidad',
-                role: 'Technical Developer',
-                description: 'Participacion en proyectos para clientes como Polestar Pilates, T-ROC Global e ISECO, trabajando en desarrollo, mantenimiento, integraciones, automatizaciones, infraestructura y soporte tecnico.',
+                role: 'Full-stack Developer',
+                companyDetails: 'Bululu Agency · Jornada completa',
+                location: 'Tallin, Condado de Harju, Estonia · En remoto',
+                description: 'Desarrollo soluciones a medida en WordPress y WooCommerce, incluyendo themes y plugins personalizados. Mi foco esta en performance, technical SEO, automatizacion de procesos e integraciones de sistemas para optimizar flujos y escalar proyectos digitales.',
                 highlights: ['WordPress, WooCommerce, PHP y desarrollo de funcionalidades.', 'Integraciones con APIs REST, D2L Brightspace, Stripe, PayPal y CRMs.', 'Automatizaciones con n8n y flujos entre plataformas externas.', 'Migraciones, DNS, SSL, hosting, permisos Linux, .htaccess y PHP-FPM.', 'Analisis de seguridad, actualizaciones y resolucion de incidencias en produccion.']
             },
             {
-                company: 'Tuxdi',
-                period: 'Abril 2023 - Diciembre 2023',
-                role: 'Web Developer',
-                description: 'Experiencia en desarrollo web, mantenimiento de sitios y resolucion de requerimientos tecnicos para proyectos digitales.',
-                highlights: ['Desarrollo y mantenimiento web.', 'Trabajo con sitios en produccion.', 'Soporte tecnico y mejora de funcionalidades.']
+                company: 'Pukara',
+                period: 'Mayo 2022 - Octubre 2024',
+                role: 'Desarrollador full stack',
+                companyDetails: 'Pukara',
+                location: 'Madrid, Comunidad de Madrid, Espana',
+                description: 'Participacion en proyectos utilizando Vue.js, Next.js, WordPress y Laravel.',
+                highlights: ['Optimizacion del rendimiento y velocidad de carga de sitios web.', 'Aplicacion de buenas practicas de desarrollo para mejorar la calidad y estabilidad del codigo.', 'Colaboracion con equipos multidisciplinarios para entregar soluciones dentro de los plazos establecidos.']
             },
             {
-                company: 'Pukara',
-                period: 'Mayo 2022 - Febrero 2023',
-                role: 'Web Developer',
-                description: 'Primeras experiencias profesionales en desarrollo web, soporte y mantenimiento de proyectos.',
-                highlights: ['Desarrollo de interfaces y funcionalidades web.', 'Mantenimiento y soporte de sitios.', 'Colaboracion en equipos de trabajo.']
+                company: 'Tuxdi',
+                period: 'Abril 2023 - Septiembre 2023',
+                role: 'Desarrollador full stack',
+                companyDetails: 'Tuxdi · Profesional independiente',
+                location: 'Argentina · En remoto',
+                description: 'Desarrollo de soluciones para sitios basados en WordPress y PHP, trabajando tanto en frontend como en backend.',
+                highlights: ['Implementacion de nuevas funcionalidades y optimizaciones orientadas a mejorar la experiencia de usuario y el rendimiento.', 'Desarrollo de interfaces web y mantenimiento de funcionalidades existentes.', 'Implementacion de procesos de testing y despliegue para mejorar la calidad y estabilidad de las entregas.']
             }
         ],
         projects: [
@@ -79,7 +85,7 @@ const translations = {
             title: 'Sobre Mí',
             paragraphs: [
                 'Soy Full-Stack Technical Developer con foco en WordPress, WooCommerce, integraciones, automatizacion y soporte tecnico avanzado. Me especializo en resolver problemas que mezclan codigo, CMS, APIs, servidores, hosting, DNS y herramientas de negocio.',
-                'Desde octubre de 2024 trabajo en Bululu Agency participando en proyectos para clientes como Polestar Pilates, T-ROC Global e ISECO. Mi trabajo incluye desarrollo y mantenimiento WordPress/WooCommerce, integraciones con APIs, automatizaciones con n8n, soporte de sitios en produccion, migraciones, seguridad y configuracion de entornos.',
+                'Desde noviembre de 2024 trabajo en Bululu Agency como Full-stack Developer en modalidad remota para Tallin, Estonia. Mi trabajo incluye desarrollo y mantenimiento WordPress/WooCommerce, integraciones con APIs, automatizaciones con n8n, soporte de sitios en produccion, migraciones, seguridad y configuracion de entornos.',
                 'Mi diferencial es tomar una incidencia ambigua y seguir el rastro hasta encontrar la causa: puede estar en un plugin, una API, una base de datos, permisos Linux, PHP-FPM, .htaccess, SSL, DNS o una automatizacion mal conectada.',
                 'Tambien estoy desarrollando proyectos propios con Python, FastAPI, SQLite y Raspberry Pi, explorando monitoreo, self-hosting, procesos persistentes y arquitectura backend ligera.',
                 'Me interesa construir soluciones que funcionen en produccion, sean mantenibles y conecten bien las necesidades del negocio con la implementacion tecnica.'
@@ -98,8 +104,8 @@ const translations = {
             resume: 'Download CV'
         },
         hero: {
-            title: 'Full-Stack Technical Developer',
-            subtitle: 'WordPress, WooCommerce, APIs, automation and backend.',
+            title: 'Full-stack Developer',
+            subtitle: 'WordPress, WooCommerce, PHP, technical SEO, automation and integrations.',
             location: 'Argentinian · Seville, Spain',
             ageSuffix: 'years old',
             experience: 'View experience',
@@ -129,23 +135,29 @@ const translations = {
             {
                 company: 'Bululu Agency',
                 period: 'November 2024 - Present',
-                role: 'Technical Developer',
-                description: 'Participation in client projects such as Polestar Pilates, T-ROC Global and ISECO, working on development, maintenance, integrations, automation, infrastructure and technical support.',
+                role: 'Full-stack Developer',
+                companyDetails: 'Bululu Agency · Full-time',
+                location: 'Tallinn, Harju County, Estonia · Remote',
+                description: 'I build tailored solutions in WordPress and WooCommerce, including custom themes and plugins. My focus is on performance, technical SEO, process automation and system integrations to streamline workflows and scale digital projects.',
                 highlights: ['WordPress, WooCommerce, PHP and feature development.', 'REST API integrations, D2L Brightspace, Stripe, PayPal and CRMs.', 'n8n automations and workflows between external platforms.', 'Migrations, DNS, SSL, hosting, Linux permissions, .htaccess and PHP-FPM.', 'Security analysis, updates and production incident resolution.']
             },
             {
-                company: 'Tuxdi',
-                period: 'April 2023 - December 2023',
-                role: 'Web Developer',
-                description: 'Experience in web development, website maintenance and technical requirements for digital projects.',
-                highlights: ['Web development and maintenance.', 'Work on production websites.', 'Technical support and feature improvements.']
+                company: 'Pukara',
+                period: 'May 2022 - October 2024',
+                role: 'Full-stack Developer',
+                companyDetails: 'Pukara',
+                location: 'Madrid, Community of Madrid, Spain',
+                description: 'Participation in projects using Vue.js, Next.js, WordPress and Laravel.',
+                highlights: ['Performance optimization and website speed improvements.', 'Application of development best practices to improve code quality and stability.', 'Collaboration with multidisciplinary teams to deliver solutions on schedule.']
             },
             {
-                company: 'Pukara',
-                period: 'May 2022 - February 2023',
-                role: 'Web Developer',
-                description: 'Early professional experience in web development, support and project maintenance.',
-                highlights: ['Web interfaces and feature development.', 'Website maintenance and support.', 'Collaboration in work teams.']
+                company: 'Tuxdi',
+                period: 'April 2023 - September 2023',
+                role: 'Full-stack Developer',
+                companyDetails: 'Tuxdi · Independent contractor',
+                location: 'Argentina · Remote',
+                description: 'Development of solutions for WordPress and PHP-based websites, working on both frontend and backend.',
+                highlights: ['Implementation of new features and optimizations focused on user experience and performance.', 'Web interface development and maintenance of existing functionality.', 'Implementation of testing and deployment processes to improve delivery quality and stability.']
             }
         ],
         projects: [
@@ -169,7 +181,7 @@ const translations = {
             title: 'About Me',
             paragraphs: [
                 'I am a Full-Stack Technical Developer focused on WordPress, WooCommerce, integrations, automation and advanced technical support. I specialize in solving problems across code, CMS platforms, APIs, servers, hosting, DNS and business tools.',
-                'Since October 2024 I have been working at Bululu Agency, participating in client projects such as Polestar Pilates, T-ROC Global and ISECO. My work includes WordPress/WooCommerce development and maintenance, API integrations, n8n automations, production support, migrations, security and environment configuration.',
+                'Since November 2024 I have been working at Bululu Agency as a remote Full-stack Developer for Tallinn, Estonia. My work includes WordPress/WooCommerce development and maintenance, API integrations, n8n automations, production support, migrations, security and environment configuration.',
                 'My main strength is taking an ambiguous issue and tracing it until the root cause is found: it can be in a plugin, an API, a database, Linux permissions, PHP-FPM, .htaccess, SSL, DNS or a broken automation.',
                 'I am also building personal projects with Python, FastAPI, SQLite and Raspberry Pi, exploring monitoring, self-hosting, persistent processes and lightweight backend architecture.',
                 'I care about building solutions that work in production, are maintainable and connect business needs with technical implementation.'

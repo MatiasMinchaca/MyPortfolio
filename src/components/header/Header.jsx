@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import { 
     Container, 
     LineS, 
-    DownloadCV, 
     MenuBurguer, 
     MenuClose, 
     MenuD,
@@ -70,20 +69,15 @@ const Header = () => {
             </MenuD>
             <MenuClose deploy={toDeployMenu} onClick={() => setToDeployMenu(!toDeployMenu)}>
             </MenuClose>
-            <DownloadCV>
-                <a href="/cv/Matias Minchaca CV.pdf" download="Curriculum Matias Minchaca">
-                    {t.resume}
-                </a>
-                <ThemeToggle
-                    type="button"
-                    isDark={isDarkMode}
-                    onClick={() => setIsDarkMode(!isDarkMode)}
-                    aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
-                    title={isDarkMode ? 'Light mode' : 'Dark mode'}
-                >
-                    {isDarkMode ? '☀' : '☾'}
-                </ThemeToggle>
-            </DownloadCV>
+            <ThemeToggle
+                type="button"
+                isDark={isDarkMode}
+                onClick={() => setIsDarkMode(!isDarkMode)}
+                aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+                title={isDarkMode ? 'Light mode' : 'Dark mode'}
+            >
+                {isDarkMode ? '☀' : '☾'}
+            </ThemeToggle>
             <LineS>
             </LineS>
         </Container>

@@ -45,6 +45,8 @@ const Home = ({ lang = 'es' }) => {
                         <span>{experience.period}</span>
                         <h2>{experience.company}</h2>
                         <h3>{experience.role}</h3>
+                        {experience.companyDetails && <p>{experience.companyDetails}</p>}
+                        {experience.location && <p>{experience.location}</p>}
                         <p>{experience.description}</p>
                         <ul>
                             {experience.highlights.map((highlight) => (
